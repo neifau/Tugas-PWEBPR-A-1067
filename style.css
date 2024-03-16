@@ -34,6 +34,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 60px;
+    margin-top: 10px;
     text-align: center;
 }
 .container {
@@ -59,7 +60,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
+}
+.tentara h5{
+    font-weight: 500;
+    font-size: 25px;
 }
 .text-tentara{
     display: flex;
@@ -80,6 +84,7 @@
 .pilih-tentara{
     background-color: #399349;
     width: 200px;
+    height: 35px;
     text-align: center;
     border-radius: 25px;
     margin-bottom: -30px;
@@ -120,18 +125,13 @@
 .petani img{
     height: 120px;
     width: 120px;
-    margin-top: 7px;
+    margin-top: -5px;
     margin-left : -70px;
 }
 .petani a{
     border-radius: 25px;
     margin-left : -70px;
-    margin-top: -35px;
-}
-.box-petani{
-    background-color: #FFF4DC;
-    margin-left : -70px;
-    top: 310px;
+    margin-top: -25px;
 }
 .pilih-petani{
     text-decoration: none;
@@ -142,6 +142,12 @@
     color: white;
     background-color: #E29A00;
     text-align: center;
+}
+.box-petani{
+    background-color: #FFF4DC;
+    margin-left : -70px;
+    height: 180px;
+    width: 235px;
 }
 .box-flex2{
     height: 130px;
@@ -160,25 +166,26 @@
 }
 .pramugari img{
     width: 120px;
-    height: 80px;
+    height: 100px;
+    margin-top: -5px;
 }
 .pramugari a{
     border-radius: 25px;
-    margin-top: -35px;  
-}
-.box-pramugari{
-    background-color: #FFCED7;
-    top: 460px;
+    margin-top: -25px; 
+    height: 25px; 
 }
 .pilih-pramugari{
     text-decoration: none;
     font-size: 12px;
     font-weight: 400;
-    padding: 4px;
     width: 110px;
     color: white;
     background-color: #FF5573;
     text-align: center;
+}
+.box-pramugari{
+    background-color: #FFCED7;
+    top: 460px;
 }
 .fotografer{
     display: flex;
@@ -228,7 +235,7 @@
     border-radius: 25px;
     margin-left: 30px;
 }
-.container2{
+.flex3{
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -238,7 +245,7 @@
     margin-left: -60px;
     padding-top: 20px;
 }
-.sub-flex1{
+.sub-flex3{
     height: 280px;
     background-color: #F4F4F4;
     width: 400px;
@@ -260,13 +267,13 @@
     align-items: center;
     padding: 15px;
 }
-.sub-flex1 img{
+.sub-flex3 img{
     height: 50px;
 }
-.text-sub-flex1{    
+.text-sub-flex3{    
     padding-left: 15px;
 }
-.sub-flex1 a{
+.sub-flex3 a{
     text-decoration: none;
     font-size: 13px;
     background-color: #D8D6C1;
@@ -274,7 +281,12 @@
     border-radius: 25px;
     color: white;
 }
-.sub-flex2{
+.sub-flex3 h5{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+.sub-flex4{
     height: 120px;
     background-color: #F4F4F4;
     width: 400px;
@@ -285,6 +297,12 @@
     flex-direction: row;
     gap: 20px;
 }
+
+.sub-flex4 h5{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
 .sub-container-2{
     height: 80px;
     width: 180px;
@@ -293,11 +311,11 @@
     align-items: center;
     flex-direction: row;
 }
-.text-container2{
+.text-sub-flex3{
     display: flex;
     flex-direction: column;
 }
-.sub-flex2 a{
+.sub-flex4 a{
     text-decoration: none;
     font-size: 13px;
     text-align: center;
@@ -306,14 +324,14 @@
     border-radius: 10px;
     color: white;
 }
-.sub-flex2 img {
+.sub-flex4 img {
     height: 80px;
 }
 @media screen and (min-width: 425px) and (max-width: 1280px) {
     header .bar{
         position: fixed;
         bottom: 0;
-        width: 100vw;
+        width: 425px;
         overflow: hidden;
         z-index: 999;
     }
@@ -325,7 +343,7 @@
         width: 100vw;
         flex-direction: column;
     }
-    .container2{
+    .flex3{
         width: 100vw;
         flex-direction: column;
     }
@@ -347,11 +365,17 @@
     }    
     .text-tentara p{
         margin-bottom: 0px;
+        font-size: 15px;
     }
     .text-tentara a{
         margin-bottom: 0px;
         position: relative;
-        top : -80px;
+        padding: 5px;
+        top : -100px;
+    }
+    .text-tentara h5{
+        margin-bottom: 0px;
+        position: relative;
     }
     .flex2{
         flex-direction: column;
@@ -368,69 +392,72 @@
     .petani img{
         height: auto;
         width: 120px;
-        margin-top: 0px;
         margin-left : 0px;
+        margin-top: -10px;
     }    
     .petani a{
         padding: 10px;
         width: 200px;
+        font-size: 15px;
         margin-left : 0px;
         margin-top: -10px;
     }    
-    .bg-petani{
-        background-color: #FFF4DC;
+    .box-petani{
         margin-left : 0px;
-        height: 230px;
+        height: 250px;
         width: 70%;
-        top: 400px;
+        top: 390px;
     }    
     .pramugari{
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: 0px;
         padding-bottom: 40px;
     }    
     .pramugari img{
         height: auto;
-        width: 120px;
-        margin-top: 0px;
+        width: 180px;
         margin-left: 0px;
+        margin-top: -20px;
     }
     .pramugari a{
-        padding: 10px;
+        padding: 5px;
+        height: 35px;
         width: 200px;
-        margin-top: -10px;  
+        font-size: 15px;
     }
    .box-pramugari{
-        height: 230px;
-        width: 70%;
+    height: 250px;
+    width: 70%;
         top: 655px;
     }
     .fotografer{
         width: 100%;
         margin-left: 0px;
-        height: 100%;
-        margin-top: 30px;
+        height: auto;
+        margin-top: 10px;
     }
     .fotografer img{
         height: auto;
         height: 180px;
         margin-left: 0px;
-        margin-bottom: 30px;
+        margin-top: -30px;
     }
     .fotografer h5{
         margin-left: 0px;
+        margin-bottom: -60px;
         font-size: 20px;
     }
     .fotografer p{
-        width: 50%;
         margin-left: 0px;
-        margin-bottom: 0px;
+        margin-top: 30px;
+        text-align: center;
     }
     .fotografer a{
         width: 200px;
         margin-left: 0px;
         position: relative;
-        top: -100px;
+        bottom: -5px;
+        font-size: 15px ;
     }
     .box-fotografer{
         height: 230px;
@@ -438,66 +465,46 @@
         top: 960px;
         margin-left: 0px;
     }
-    .container2{
+    .flex3{
         gap: 30px;
         margin-left: 0px;
     }
-    .sub-flex1{
+    .sub-flex3{
         height: auto;
         background-color: transparent;
         width: 70%;
         gap: 20px;
     }
-    .sub-flex2{
-        height: auto;
-        width: 70%;
-        flex-direction: column;
-        gap: 20px;
-        height: 100%;
-        padding-bottom: 70px;
-    }
-    .sub-flex1 .dokter{
+    .sub-flex3 .pilot{
         height: 230px;
         width: 100%;
         background-color: #E9E8E2;
         flex-direction: column;
         padding: 15px;
-    }
-    .sub-flex1 .pilot{
-        height: 230px;
-        width: 100%;
-        background-color: #E9E8E2;
-        flex-direction: column;
-        padding: 15px;
-    }
-    .sub-flex1 .ilmuan{
-        height: 230px;
-        width: 100%;
-        background-color: #E9E8E2;
-        flex-direction: column;
-        padding: 15px;
-    }
-    .sub-flex2 .pembalap{
-        height: 230px;
-        width: 100%;
-        flex-direction: column;
-        background-color: #FFDBC5;
-    }
-    .sub-flex2 .astronout{
-        height: 230px;
-        width: 100%;
-        flex-direction: column;
-        background-color: #8FC5ED;
-    }
-    .dokter img{
-        height: auto;
-        height: 500px;
-        margin-bottom: 0px;
     }
     .pilot img {
         height: auto;
         height: 500px;
         margin-bottom: 0px;
+    }
+    .pilot .text-pilot {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .pilot a{
+        font-size: 20px;
+        padding: 5px 50px 5px 50px;
+    }
+    .pilot h5{
+        visibility: hidden;
+        position: absolute;
+    }
+    .sub-flex3 .ilmuan{
+        height: 230px;
+        width: 100%;
+        background-color: #E9E8E2;
+        flex-direction: column;
+        padding: 15px;
     }
     .ilmuan img {
         height: auto;
@@ -505,15 +512,31 @@
         margin-bottom: 0px;
         margin-left: 25px;
     }
-    .dokter h5{
-        visibility: hidden;
-        position: absolute;
-    }
-    .pilot h5{
-        visibility: hidden;
-        position: absolute;
-    }
     .ilmuan h5{
+        visibility: hidden;
+        position: absolute;
+    }
+    .ilmuan .text-ilmuwan {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .ilmuan a{
+        font-size: 20px;
+        padding: 5px 50px 5px 50px;
+    }
+    .sub-flex3 .dokter{
+        height: 230px;
+        width: 100%;
+        background-color: #E9E8E2;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .dokter img{
+        height: auto;
+        height: 500px;
+        margin-bottom: 0px;
+    }
+    .dokter h5{
         visibility: hidden;
         position: absolute;
     }
@@ -521,33 +544,27 @@
         padding-left: 0px;
         text-align: center;
     }
-    .pilot .text-pilot {
-        padding-left: 0px;
-        text-align: center;
-    }
-    .ilmuan .text-ilmuwan {
-        padding-left: 0px;
-        text-align: center;
-    }
     .dokter a{
         font-size: 20px;
         padding: 5px 50px 5px 50px;
     }
-    .pilot a{
-        font-size: 20px;
-        padding: 5px 50px 5px 50px;
+    .sub-flex4{
+        height: auto;
+        width: 70%;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        padding-bottom: 70px;
     }
-    .ilmuan a{
-        font-size: 20px;
-        padding: 5px 50px 5px 50px;
+    .sub-flex4 .pembalap{
+        height: 230px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #FFDBC5;
     }
     .pembalap img{
         height: 200px;
         margin-top: 20px;
-    }
-    .astronout img{
-        height: 180px;
-        margin-top: 30px;
     }
     .pembalap a{
         font-size: 17px;
@@ -556,13 +573,28 @@
         border-radius: 25px;
         margin-top: -15px;
     }
+    .pembalap h5{
+        visibility: hidden;
+        position: absolute;
+    }
+    .sub-flex4 .astronout{
+        height: 230px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #8FC5ED;
+    }
+    .astronout img{
+        height: 180px;
+        margin-top: 30px;
+    }
     .astronout a{
         font-size: 17px;
         background-color: #275E87;
         padding: 5px 50px 5px 50px;
         border-radius: 25px;
+        margin-bottom: 80px;
     }
-    .text-container2 h5{
+    .astronout h5{        
         visibility: hidden;
         position: absolute;
     }
